@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Luis & María José</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/YouTubePopUp.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="lds-heart">
+            <div></div>
+        </div>
+    </div>
+    <!-- Progress-wrapp scroll-button -->
+    <div class="progress-wrap active-progress">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper navbar-brand valign">
+                <div class="logo">
+                    <a href="index.html"><img src="images2/LOGO nuestra boda.png" alt="" style="width: 63%;"></a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="icon-bar"><i class="ti-line-double"></i></span> </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home" data-scroll-nav="0">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#whenwhere" data-scroll-nav="6">¿Dónde?</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#outfit" data-scroll-nav="8">Vestimenta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rsvp3" data-scroll-nav="7">Muestras de Cariño</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#rsvp2" data-scroll-nav="9">Notas</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <style>
+        .bg-fixed {
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <script>
+        function changeBackground() {
+            var screenWidth = window.innerWidth;
+            var mobileThreshold = 768; // Adjust this threshold as needed
+            var bgElement = document.querySelector('.bg-fixed');
+
+            if (screenWidth < mobileThreshold) {
+                // Use mobile background image
+                bgElement.style.backgroundImage = "url('images/JAP-4996-1.jpg')";
+            } else {
+                // Use desktop background image
+                bgElement.style.backgroundImage = "url('images/JAP-4996.jpg')";
+            }
+        }
+
+        // Call the function initially and whenever the window is resized
+        window.onload = changeBackground;
+        window.onresize = changeBackground;
+    </script>
+
+    <!-- Slider section -->
+    <header id="home" data-scroll-index="0">
+        <div class="mary-hero js-fullheight">
+            <div class="flexslider js-fullheight">
+                <ul class="slides">
+                    <li class="bg-fixed" data-overlay-dark="2" id="icon">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center js-fullheight slider-text">
+                                    <div class="slider-text-inner mx-auto">
+                                        <h2>Luis & María José</h2>
+                                        <h6>22 de Febrero de 2025 — San Isidro, Heredia</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- Welcome section -->
+    <div id="welcome" class="welcome section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="welcome-mt">
+                        <div class="welcome-image-wrapper">
+                            <div class="img">
+                                <a href="#" data-scroll-nav="1"><img src="images/JAP-4968.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="section-title">¡Nos Casamos!</h2>
+                    <p>Con una gran ilusión queremos compartir con ustedes nuestro gran día... <br>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- Countdown section -->
+    <div id="countdown" class="section-padding bg-img bg-fixed" data-overlay-dark="1"
+        data-background="images/JAP_8116.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-md-12">
+                    <h2>Nos casaremos en</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><span id="days"></span>Días</li>
+                        <li><span id="hours"></span>Horas</li>
+                        <li><span id="minutes"></span>Minutos</li>
+                        <li><span id="seconds"></span>Segundos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <!-- Banner section -->
+    <div id="banner" class="section-padding bg-img bg-fixed" data-overlay-dark="1"
+        data-background="images/JAP_8093.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-md-12">
+                    <h6>Agenda la fecha.</h6>
+                    <h1>22.02.2025</h1>
+                    <h1><i class="ti-heart"></i></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+<!-- When & Where section -->
+    <div id="whenwhere" class="when-where section-padding" data-scroll-index="6">
+<div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInUp">
+                    <h6 class="section-subtitle">Agenda la fecha</h6>
+                    <h2 class="section-title">¿Dónde?</h2>
+                </div>
+            </div>
+            <div class="row">
+<div class="col-md-6 order1 animate-box" data-animate-effect="fadeInRight">
+                    <div class="img" align="center">
+                        <img src="images/JAP-5006.jpg" alt="">
+                    </div>
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 valign animate-box" data-animate-effect="fadeInRight">
+                    <a href="https://maps.app.goo.gl/g9v4cSMuMpLRRru78" target="_blank"> <img src="images2/ceremony-2.png" alt=""
+                            style="width: 80%; height: auto;">
+                    </a>
+                </div>
+
+                <div class="col-md-6 order1 animate-box" data-animate-effect="fadeInRight">
+                    <div class="marybrian-blog section-padding">
+                        <div class="container">
+                            <div class="row mb-30">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1052.6041844062574!2d-84.09379120006773!3d10.061521988930078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1726091040019!5m2!1ses-419!2scr" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- When & Where section2 -->
+    <div id="whenwhere" class="when-where section-padding" data-scroll-index="6">
+        <div class="container">
+            <div class="row"> </div>
+            <div class="row"> </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 valign animate-box" data-animate-effect="fadeInRight">
+                    <a href="https://maps.app.goo.gl/YzLmNuHT8HDF76qHA" target="_blank"> <img src="images2/ceremony-3.png" alt=""
+                            style="width: 80%; height: auto;">
+                    </a>
+                </div>
+
+                <div class="col-md-6 order1 animate-box" data-animate-effect="fadeInRight">
+                    <div class="marybrian-blog section-padding">
+                        <div class="container">
+                            <div class="row mb-30">
+                                <iframe
+                                    src="https://www.google.com/maps/embed/v1/place?q=sala+de+eventos+la+alborada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                    width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        	
+		
+<!-- RSVP Form section -->
+<div id="" class="rsvp section-padding bg-img bg-fixed" data-background="images/810_1514.jpg"
+        data-scroll-index="7">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 bg-white p-60" style="opacity: 0.6;">
+        <h2 class="text-center">Hemos reservado 2 <br>espacios para ti</br></h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+            <!-- Dress Code section -->
+            <div id="outfit" class="bride-groom clear section-padding bg-cream" data-scroll-index="8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-30 animate-box" data-animate-effect="fadeInUp">
+                            <h6 class="section-subtitle">Código de Vestimenta</h6>
+                            <h2 class="section-title">Formal, Casual</h2>
+                        </div>
+                        <img src="images/Imagen1.png" alt="">
+
+                        <div class="col-md-12 text-center mb-30 animate-box">
+                            <div class="widget-container" style="text-align: center;">
+                                <br>
+                                <p style="font-size: larger;">Siéntete comod@ y guap@, queremos verte bailar y
+                                    enfiestarte con nosotros. <br>Solamente, queremos guardar el color blanco y azul navy para la pareja.</br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- When & Where section -->
+	
+            <!-- RSVP Form section -->
+            <div id="rsvp3" class="rsvp3 section-padding bg-img bg-fixed" data-background="images/JAP-4952-1.jpg"
+                data-scroll-index="7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 bg-white p-60" style="opacity: 0.8;">
+                            <h2 class="text-center">Muestras de Cariño</br></h2>
+                            <h6 class="text-center" style="font-family: Didact Gothic; font-size: large;">
+                                Que nos acompañes es lo más importante! Y sí está en tu disposición realizar una muestra
+                                de
+                                cariño estaremos muy agradecidos.
+                                <br>
+                                <br>
+                                <br>
+                                - Lluvia de Sobres
+
+                                <br>
+                                "La lluvia de sobres, es la tradición de regalar dinero en efectivo a los novios en un
+                                sobre
+                                el día del evento"
+								<br>
+                              <br>
+                                <br>
+                                - SINPE Móvil
+
+                                <br>
+                                Luis Alejandro Monge: 8744-3525
+								<br>
+								María José Álvarez: 8673-3597
+
+                                
+                               
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+<br>
+            <br>
+
+            <div id="rsvp2" class="rsvp section-padding bg-img bg-fixed" data-background="images/JAP-5082.jpg"
+                data-scroll-index="9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 bg-white p-60" style="opacity: 0.8;">
+                            <h2 class="text-center">¡Importante!</br></h2>
+                            <br>
+                            <h6 class="text-center" style="font-family: Didact Gothic; font-size: large;">
+                                Este es un evento para adultos, contamos con tu presencia! </h6>
+						  <h6 class="text-center" style="font-family: Didact Gothic; font-size: large;">Agradecemos realizar la confirmación a más tardar el 7 de diciembre del 2024 al siguiente contacto:</h6>
+							<h6 class="text-center" style="font-family: Didact Gothic; font-size: large;">
+                                <a href="https://wa.me/50688589584"><img src="images2/boton-contacto-gde.png" alt="" style="width: 40%;"></a></h6>
+							</h6>
+				
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Footer section -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="top-footer">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="section-padding">
+                                    <h2><span>Luis <small>&amp;</small> María José</span></h2>
+                                    <h6>22 de Febrero de 2025 — San Isidro, Heredia</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-footer">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>Nos gustaría que nos acompañes en este día tan especial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- jQuery -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/modernizr-2.6.2.min.js"></script>
+            <script src="js/jquery.easing.1.3.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.waypoints.min.js"></script>
+            <script src="js/jquery.flexslider-min.js"></script>
+            <script src="js/sticky-kit.min.js"></script>
+            <script src="js/scrollIt.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/isotope.js"></script>
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <script src="js/YouTubePopUp.js"></script>
+            <script src="js/template.js"></script>
+
+</body>
+
+</html>
